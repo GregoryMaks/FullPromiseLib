@@ -10,6 +10,8 @@
 		933E4CE21FCB7961004A13F8 /* FullPromiseLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 933E4CD81FCB7960004A13F8 /* FullPromiseLib.framework */; };
 		933E4CE71FCB7961004A13F8 /* FullPromiseLibTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933E4CE61FCB7961004A13F8 /* FullPromiseLibTests.swift */; };
 		933E4CE91FCB7961004A13F8 /* FullPromiseLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 933E4CDB1FCB7960004A13F8 /* FullPromiseLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		933E4CF31FCB7975004A13F8 /* Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933E4CF21FCB7975004A13F8 /* Promise.swift */; };
+		933E4CF51FCB798E004A13F8 /* PromiseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933E4CF41FCB798E004A13F8 /* PromiseTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,9 @@
 		933E4CE11FCB7961004A13F8 /* FullPromiseLibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FullPromiseLibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		933E4CE61FCB7961004A13F8 /* FullPromiseLibTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullPromiseLibTests.swift; sourceTree = "<group>"; };
 		933E4CE81FCB7961004A13F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		933E4CF21FCB7975004A13F8 /* Promise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Promise.swift; sourceTree = "<group>"; };
+		933E4CF41FCB798E004A13F8 /* PromiseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromiseTests.swift; sourceTree = "<group>"; };
+		933E4CF61FCB79F5004A13F8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +58,7 @@
 		933E4CCE1FCB7960004A13F8 = {
 			isa = PBXGroup;
 			children = (
+				933E4CF61FCB79F5004A13F8 /* README.md */,
 				933E4CDA1FCB7960004A13F8 /* FullPromiseLib */,
 				933E4CE51FCB7961004A13F8 /* FullPromiseLibTests */,
 				933E4CD91FCB7960004A13F8 /* Products */,
@@ -71,6 +77,7 @@
 		933E4CDA1FCB7960004A13F8 /* FullPromiseLib */ = {
 			isa = PBXGroup;
 			children = (
+				933E4CF21FCB7975004A13F8 /* Promise.swift */,
 				933E4CDB1FCB7960004A13F8 /* FullPromiseLib.h */,
 				933E4CDC1FCB7961004A13F8 /* Info.plist */,
 			);
@@ -80,6 +87,7 @@
 		933E4CE51FCB7961004A13F8 /* FullPromiseLibTests */ = {
 			isa = PBXGroup;
 			children = (
+				933E4CF41FCB798E004A13F8 /* PromiseTests.swift */,
 				933E4CE61FCB7961004A13F8 /* FullPromiseLibTests.swift */,
 				933E4CE81FCB7961004A13F8 /* Info.plist */,
 			);
@@ -148,6 +156,7 @@
 				TargetAttributes = {
 					933E4CD71FCB7960004A13F8 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					933E4CE01FCB7961004A13F8 = {
@@ -196,6 +205,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				933E4CF31FCB7975004A13F8 /* Promise.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,6 +214,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				933E4CE71FCB7961004A13F8 /* FullPromiseLibTests.swift in Sources */,
+				933E4CF51FCB798E004A13F8 /* PromiseTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +345,7 @@
 		933E4CED1FCB7961004A13F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -347,6 +359,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.gregorym.FullPromiseLib;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -355,6 +368,7 @@
 		933E4CEE1FCB7961004A13F8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -376,6 +390,7 @@
 		933E4CF01FCB7961004A13F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8BV4H23WZY;
 				INFOPLIST_FILE = FullPromiseLibTests/Info.plist;
@@ -390,6 +405,7 @@
 		933E4CF11FCB7961004A13F8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8BV4H23WZY;
 				INFOPLIST_FILE = FullPromiseLibTests/Info.plist;
