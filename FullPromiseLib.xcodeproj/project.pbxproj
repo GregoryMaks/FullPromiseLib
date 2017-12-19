@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		933E4CE21FCB7961004A13F8 /* FullPromiseLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 933E4CD81FCB7960004A13F8 /* FullPromiseLib.framework */; };
-		933E4CE71FCB7961004A13F8 /* FullPromiseLibTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933E4CE61FCB7961004A13F8 /* FullPromiseLibTests.swift */; };
 		933E4CE91FCB7961004A13F8 /* FullPromiseLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 933E4CDB1FCB7960004A13F8 /* FullPromiseLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		933E4CF31FCB7975004A13F8 /* Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933E4CF21FCB7975004A13F8 /* Promise.swift */; };
 		933E4CF51FCB798E004A13F8 /* PromiseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933E4CF41FCB798E004A13F8 /* PromiseTests.swift */; };
@@ -29,7 +28,6 @@
 		933E4CDB1FCB7960004A13F8 /* FullPromiseLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FullPromiseLib.h; sourceTree = "<group>"; };
 		933E4CDC1FCB7961004A13F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		933E4CE11FCB7961004A13F8 /* FullPromiseLibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FullPromiseLibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		933E4CE61FCB7961004A13F8 /* FullPromiseLibTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullPromiseLibTests.swift; sourceTree = "<group>"; };
 		933E4CE81FCB7961004A13F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		933E4CF21FCB7975004A13F8 /* Promise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Promise.swift; sourceTree = "<group>"; };
 		933E4CF41FCB798E004A13F8 /* PromiseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromiseTests.swift; sourceTree = "<group>"; };
@@ -88,7 +86,6 @@
 			isa = PBXGroup;
 			children = (
 				933E4CF41FCB798E004A13F8 /* PromiseTests.swift */,
-				933E4CE61FCB7961004A13F8 /* FullPromiseLibTests.swift */,
 				933E4CE81FCB7961004A13F8 /* Info.plist */,
 			);
 			path = FullPromiseLibTests;
@@ -213,7 +210,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				933E4CE71FCB7961004A13F8 /* FullPromiseLibTests.swift in Sources */,
 				933E4CF51FCB798E004A13F8 /* PromiseTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
